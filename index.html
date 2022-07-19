@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Panaderia de ciudad" />
-          <meta name="author" content="Rocio Sosa" />
-          <meta name="keywords" content="Panaderia, tortas, desayunos, ciudad">
+        <meta name="description" content="Panaderia" />
+        <meta name="keywords" content="Panaderia, pan, mendoza, ciudad, tortas, dulce, mediatarde, comida, facturas">
+        <meta name="author" content="Rocio Sosa" />
           <title>Mechita Tienda de Sabores</title>
       <link rel="icon" type="image/x-icon" href="assets/icono.png" />
         <!-- Font Awesome icons (free version)-->
@@ -15,46 +15,86 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     </head>
     <body>
         <header>
+          <div data-aos="zoom-in">
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
               <span class="site-heading-lower">Mechita</span>
                 <span class="site-heading-upper text-primary mb-3">Tienda de sabores</span>
             </h1>
+          </div>
         </header>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Mechita Tienda de Sabores</a>
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none d-block" href="index.html">Mechita Tienda de Sabores</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Acerca de MECHITA</a></li>
+
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Productos</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Horario</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="page-section clearfix">
-            <div class="container">
-                <div class="intro">
-                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/lugar.jpeg" alt="..." />
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">De nuestro horno</span>
-                            <span class="section-heading-lower">A su puerta</span>
-                        </h2>
-                        <p class="mb-3">Nuestra misión es elaborar productos de alta calidad, utilizando los mejores ingredientes, innovando en sabores y recetas con el propósito de brindarte una experiencia inolvidable de sabor!</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Vení a conocernos!</a></div>
+        <br>
+        <div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-mdb-interval="10000">
+        <img src="assets/img/lugar.jpeg" class="d-block w-100" alt="Wild Landscape"/>
+      </div>
+      <div class="carousel-item" data-mdb-interval="2000">
+        <img src="assets/img/pan.jpg" class="d-block w-100" alt="Camera"/>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/tarta.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+        <section class="page-section about-heading">
+            <div class="container" data-aos="zoom-in">
+
+
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0 fototodas" src="assets/img/Mechita3.jpeg" alt="..." />
+
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <h2 class="section-heading mb-4">
+                                  <span class="section-heading-upper">De nuestro horno</span>
+                          <span class="section-heading-lower">A su puerta"</span>
+                                </h2>
+
+
+                               <p class="mb-0">
+                                    Nuestra misión es elaborar productos de
+                                    <em>alta calidad</em>
+                                  utilizando los mejores ingredientes, innovando en sabores y recetas con el propósito de brindarte una experiencia inolvidable de sabor!
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="page-section cta">
-            <div class="container">
+            <div class="container" data-aos="zoom-in-up">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
                         <div class="cta-inner bg-faded text-center rounded">
@@ -68,18 +108,29 @@
                 </div>
             </div>
         </section>
+
+
         <footer class="footer text-faded text-center py-5">
             <div class="container"><p class="m-0 small"></p></div>
 <h1 class="tfooter">Contacto</h1>
+<p>
 
-                         <a href="https://instagram.com/mechita_tiendadesabores?igshid=YmMyMTA2M2Y=" target="_blank" ><i class="fab fa-instagram" style='font-size:36px'></i> </a>
-                                 <a href="https://www.facebook.com/profile.php?id=100072401107190" target="_blank"><i class="fab fa-facebook-f" style='font-size:36px'></i></a>
-                               <a href="https://wa.me/+5492612166816" target=""><i class="fab fa-whatsapp" style='font-size:36px'></i></a>
+                         <a href="https://instagram.com/mechita_tiendadesabores?igshid=YmMyMTA2M2Y=" target="_blank" ><i class="fab fa-instagram" style='font-size:36px'></i> </a> Instagram
 
+                                 <a href="https://www.facebook.com/profile.php?id=100072401107190" target="_blank"><i class="fab fa-facebook-f" style='font-size:36px'></i></a> Facebook
+
+                               <a href="https://wa.me/+5492612166816" target=""><i class="fab fa-whatsapp" style='font-size:36px'></i></a> Whatsapp
+                               <br>
+                               Mechita Tienda de Sabores ® - 2022 Todos los derechos reservados.
+</p>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+  AOS.init();
+</script>
     </body>
 </html>

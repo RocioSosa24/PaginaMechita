@@ -11607,8 +11607,11 @@ img {
 .redes{
   box-sizing: border-box;
   text-align: center;
-  
+
 }
 .tfooter{
   text-align: center;
+}
+header{
+  z-index: 4;
 }
