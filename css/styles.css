@@ -11493,6 +11493,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  padding-top: 0;
 }
 .fondodesa{
   background-color: rgba(47, 23, 15, 0.9);
@@ -11614,4 +11615,12 @@ img {
 }
 header{
   z-index: 4;
+}
+.conoce{
+  background-color: rgba(47, 23, 15, 0.9);
+  color: #f6e1c5;
+  font-size: 2.2rem;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
 }
